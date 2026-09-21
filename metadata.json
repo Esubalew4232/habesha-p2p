@@ -1,0 +1,6 @@
+{
+  "name": "Habesha P2P",
+  "description": "Ethiopian USDT P2P mobile trading application with authoritative locked-balance engine, double-release protection, bilingual Amharic & English support, and admin dispute operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

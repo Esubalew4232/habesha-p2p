@@ -1,0 +1,36 @@
+name: habesha_p2p
+description: "Habesha P2P - Complete Production Ethiopian USDT P2P Trading Mobile Application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  flutter_bloc: ^8.1.3
+  dio: ^5.4.1
+  flutter_secure_storage: ^9.0.0
+  google_sign_in: ^6.2.1
+  qr_flutter: ^4.1.0
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+  url_launcher: ^6.2.5
+  lucide_icons: ^0.257.0
+  decimal: ^2.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+    - assets/icons/

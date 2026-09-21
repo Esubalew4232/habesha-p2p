@@ -1,0 +1,705 @@
+{
+  "users": [
+    {
+      "id": "USR-ADMIN-001",
+      "email": "admin@habeshap2p.com",
+      "fullName": "Habesha P2P Super Admin",
+      "passwordHash": "$2b$10$tKtZ2XnRtG766IQSy7S/5u1NypY2j.nj0xH.gItzC7C7xiE8Vp7TO",
+      "role": "ADMIN",
+      "isSuspended": false,
+      "tradingRestricted": false,
+      "withdrawalRestricted": false,
+      "telegramHandle": "@habeshap2padmin",
+      "createdAt": "2026-09-21T09:27:14.099Z",
+      "updatedAt": "2026-09-21T09:27:14.100Z"
+    },
+    {
+      "id": "TEST-BUYER-1789982834102",
+      "email": "buyer_1789982834102@test.com",
+      "fullName": "Derartu Tulu (Buyer)",
+      "passwordHash": "dummy",
+      "role": "USER",
+      "isSuspended": false,
+      "tradingRestricted": false,
+      "withdrawalRestricted": false,
+      "createdAt": "2026-09-21T09:27:14.102Z",
+      "updatedAt": "2026-09-21T09:27:14.102Z"
+    },
+    {
+      "id": "USR-1789983252039-454",
+      "email": "user.ethio@gmail.com",
+      "fullName": "Habesha Trader",
+      "passwordHash": "$2b$10$9JfrZqkVPdrVv8SDjZGXhuR6iAmBJcbZqMKYmk9CsBLTKCQSU.GP.",
+      "role": "USER",
+      "isSuspended": false,
+      "tradingRestricted": false,
+      "withdrawalRestricted": false,
+      "createdAt": "2026-09-21T09:34:12.039Z",
+      "updatedAt": "2026-09-21T09:34:12.040Z"
+    },
+    {
+      "id": "USR-1789983884199-550",
+      "email": "esubalewtezera4@gmail.com",
+      "fullName": "esube",
+      "passwordHash": "$2b$10$ujHyiOapi3MF3HhQ4hBIYuTOMA0AVKg/rBMSOZkuE7444WnKgB2JO",
+      "role": "USER",
+      "isSuspended": false,
+      "tradingRestricted": false,
+      "withdrawalRestricted": false,
+      "createdAt": "2026-09-21T09:44:44.199Z",
+      "updatedAt": "2026-09-21T09:44:44.199Z"
+    }
+  ],
+  "wallets": {
+    "USR-ADMIN-001": {
+      "userId": "USR-ADMIN-001",
+      "availableBalance": "1000.0000",
+      "lockedBalance": "0.0000",
+      "totalBalance": "1000.0000",
+      "currency": "USDT",
+      "updatedAt": "2026-09-21T09:27:14.100Z"
+    },
+    "TEST-SELLER-1789982834101": {
+      "userId": "TEST-SELLER-1789982834101",
+      "availableBalance": "4.8200",
+      "lockedBalance": "5.0600",
+      "totalBalance": "9.8800",
+      "currency": "USDT",
+      "updatedAt": "2026-09-21T09:45:17.538Z"
+    },
+    "TEST-BUYER-1789982834102": {
+      "userId": "TEST-BUYER-1789982834102",
+      "availableBalance": "10.0000",
+      "lockedBalance": "0.0000",
+      "totalBalance": "10.0000",
+      "currency": "USDT",
+      "updatedAt": "2026-09-21T09:27:14.108Z"
+    },
+    "USR-1789983252039-454": {
+      "userId": "USR-1789983252039-454",
+      "availableBalance": "0.0000",
+      "lockedBalance": "0.0000",
+      "totalBalance": "0.0000",
+      "currency": "USDT",
+      "updatedAt": "2026-09-21T09:34:12.040Z"
+    },
+    "USR-1789983884199-550": {
+      "userId": "USR-1789983884199-550",
+      "availableBalance": "0.0000",
+      "lockedBalance": "0.0000",
+      "totalBalance": "0.0000",
+      "currency": "USDT",
+      "updatedAt": "2026-09-21T09:44:44.199Z"
+    }
+  },
+  "ledger": [
+    {
+      "id": "LEDGER-1789983917538-9459",
+      "userId": "TEST-SELLER-1789982834101",
+      "type": "LOCK",
+      "amount": "5.0600",
+      "availableBefore": "9.8800",
+      "availableAfter": "4.8200",
+      "lockedBefore": "0.0000",
+      "lockedAfter": "5.0600",
+      "totalBefore": "9.8800",
+      "totalAfter": "9.8800",
+      "referenceId": "HBP-420880",
+      "description": "Locked 5.0600 USDT for Trade HBP-420880 (5.0000 USDT trade + 0.0600 USDT seller fee)",
+      "createdAt": "2026-09-21T09:45:17.538Z"
+    },
+    {
+      "id": "LEDGER-1789982834108-ADMIN-SELL",
+      "userId": "TEST-SELLER-1789982834101",
+      "type": "P2P_SELL",
+      "amount": "-5.0000",
+      "availableBefore": "9.8800",
+      "availableAfter": "9.8800",
+      "lockedBefore": "5.0600",
+      "lockedAfter": "0.0000",
+      "totalBefore": "14.9400",
+      "totalAfter": "9.8800",
+      "referenceId": "HBP-957108",
+      "description": "Dispute DSP-1789982834107-9305 resolved in buyer favor by admin. Released 5.0000 USDT",
+      "createdAt": "2026-09-21T09:27:14.108Z"
+    },
+    {
+      "id": "LEDGER-1789982834108-ADMIN-BUY",
+      "userId": "TEST-BUYER-1789982834102",
+      "type": "P2P_BUY",
+      "amount": "+5.0000",
+      "availableBefore": "5.0000",
+      "availableAfter": "10.0000",
+      "lockedBefore": "0.0000",
+      "lockedAfter": "0.0000",
+      "totalBefore": "5.0000",
+      "totalAfter": "10.0000",
+      "referenceId": "HBP-957108",
+      "description": "Dispute DSP-1789982834107-9305 resolved in buyer favor by admin. Received 5.0000 USDT",
+      "createdAt": "2026-09-21T09:27:14.108Z"
+    },
+    {
+      "id": "LEDGER-1789982834106-7263",
+      "userId": "TEST-SELLER-1789982834101",
+      "type": "LOCK",
+      "amount": "5.0600",
+      "availableBefore": "14.9400",
+      "availableAfter": "9.8800",
+      "lockedBefore": "0.0000",
+      "lockedAfter": "5.0600",
+      "totalBefore": "14.9400",
+      "totalAfter": "14.9400",
+      "referenceId": "HBP-957108",
+      "description": "Locked 5.0600 USDT for Trade HBP-957108 (5.0000 USDT trade + 0.0600 USDT seller fee)",
+      "createdAt": "2026-09-21T09:27:14.106Z"
+    },
+    {
+      "id": "LEDGER-1789982834105-BUY",
+      "userId": "TEST-BUYER-1789982834102",
+      "type": "P2P_BUY",
+      "amount": "+5.0000",
+      "availableBefore": "0.0000",
+      "availableAfter": "5.0000",
+      "lockedBefore": "0.0000",
+      "lockedAfter": "0.0000",
+      "totalBefore": "0.0000",
+      "totalAfter": "5.0000",
+      "referenceId": "HBP-302698",
+      "description": "Completed P2P Buy Trade HBP-302698: Received 5.0000 USDT",
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "LEDGER-1789982834105-SFEE",
+      "userId": "TEST-SELLER-1789982834101",
+      "type": "FEE",
+      "amount": "-0.0600",
+      "availableBefore": "14.9400",
+      "availableAfter": "14.9400",
+      "lockedBefore": "0.0600",
+      "lockedAfter": "0.0000",
+      "totalBefore": "15.0000",
+      "totalAfter": "14.9400",
+      "referenceId": "HBP-302698",
+      "description": "P2P Trading Fee for Trade HBP-302698",
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "LEDGER-1789982834105-SELL",
+      "userId": "TEST-SELLER-1789982834101",
+      "type": "P2P_SELL",
+      "amount": "-5.0000",
+      "availableBefore": "14.9400",
+      "availableAfter": "14.9400",
+      "lockedBefore": "5.0600",
+      "lockedAfter": "0.0600",
+      "totalBefore": "20.0000",
+      "totalAfter": "15.0000",
+      "referenceId": "HBP-302698",
+      "description": "Completed P2P Sell Trade HBP-302698: Transferred 5.0000 USDT to buyer",
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "LEDGER-1789982834103-4825",
+      "userId": "TEST-SELLER-1789982834101",
+      "type": "LOCK",
+      "amount": "5.0600",
+      "availableBefore": "20.0000",
+      "availableAfter": "14.9400",
+      "lockedBefore": "0.0000",
+      "lockedAfter": "5.0600",
+      "totalBefore": "20.0000",
+      "totalAfter": "20.0000",
+      "referenceId": "HBP-302698",
+      "description": "Locked 5.0600 USDT for Trade HBP-302698 (5.0000 USDT trade + 0.0600 USDT seller fee)",
+      "createdAt": "2026-09-21T09:27:14.103Z"
+    }
+  ],
+  "depositMethods": [
+    {
+      "id": "DEP-TRC20",
+      "name": "USDT (TRC20)",
+      "network": "Tron (TRC20)",
+      "address": "TLaYm4z7mQ8F5EwN3U9vP61x2oR8sK9Hab",
+      "instructions": "Send only USDT TRC20 to this deposit address. Minimum deposit is 5 USDT. Upload screenshot with TxID.",
+      "minDeposit": "5.0000",
+      "isActive": true,
+      "createdAt": "2026-09-21T09:27:14.100Z"
+    },
+    {
+      "id": "DEP-BEP20",
+      "name": "USDT (BEP20)",
+      "network": "BNB Smart Chain (BEP20)",
+      "address": "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
+      "instructions": "Send only USDT BEP20. Minimum deposit is 5 USDT. Confirmation within 5-15 mins after admin review.",
+      "minDeposit": "5.0000",
+      "isActive": true,
+      "createdAt": "2026-09-21T09:27:14.100Z"
+    }
+  ],
+  "deposits": [],
+  "withdrawals": [],
+  "supportedPaymentMethods": [
+    {
+      "id": "PM-CBE",
+      "name": "Commercial Bank of Ethiopia (CBE)",
+      "type": "BANK_TRANSFER",
+      "instructions": "Transfer Birr via CBE Mobile Banking or CBE branch.",
+      "isActive": true
+    },
+    {
+      "id": "PM-TELEBIRR",
+      "name": "Telebirr (Ethio Telecom)",
+      "type": "MOBILE_MONEY",
+      "instructions": "Send money to Telebirr phone number with trade ID in remark.",
+      "isActive": true
+    },
+    {
+      "id": "PM-AWASH",
+      "name": "Awash Bank",
+      "type": "BANK_TRANSFER",
+      "instructions": "Transfer via Awash Online or Awash Mobile App.",
+      "isActive": true
+    },
+    {
+      "id": "PM-DASHEN",
+      "name": "Dashen Bank / Amole",
+      "type": "BANK_TRANSFER",
+      "instructions": "Transfer to Dashen account or Amole wallet.",
+      "isActive": true
+    },
+    {
+      "id": "PM-BOA",
+      "name": "Bank of Abyssinia (BoA)",
+      "type": "BANK_TRANSFER",
+      "instructions": "Transfer to BoA account.",
+      "isActive": true
+    },
+    {
+      "id": "PM-CBEBIRR",
+      "name": "CBE Birr",
+      "type": "MOBILE_MONEY",
+      "instructions": "Transfer via CBE Birr mobile app.",
+      "isActive": true
+    },
+    {
+      "id": "PM-HIBRET",
+      "name": "Hibret Bank",
+      "type": "BANK_TRANSFER",
+      "instructions": "Transfer via Hibret Bank.",
+      "isActive": true
+    },
+    {
+      "id": "PM-WEGAGEN",
+      "name": "Wegagen Bank",
+      "type": "BANK_TRANSFER",
+      "instructions": "Transfer via Wegagen Bank.",
+      "isActive": true
+    }
+  ],
+  "sellerPaymentMethods": [],
+  "advertisements": [],
+  "trades": [
+    {
+      "id": "HBP-420880",
+      "adId": "AD-1789982834102",
+      "buyerId": "USR-1789983884199-550",
+      "buyerName": "esube",
+      "buyerEmail": "esubalewtezera4@gmail.com",
+      "sellerId": "1000000001",
+      "sellerName": "Verified Trader",
+      "sellerEmail": "trader@habeshap2p.com",
+      "tradeAmountUsdt": "5.0000",
+      "priceEtb": "145.0000",
+      "totalEtb": "725.00",
+      "sellerFeeUsdt": "0.0600",
+      "buyerFeeUsdt": "0.0600",
+      "lockedSellerUsdt": "5.0600",
+      "buyerReceivesUsdt": "5.0000",
+      "selectedPaymentMethod": {
+        "id": "PMT-1789982834102",
+        "userId": "1000000001",
+        "paymentMethodId": "PM-CBE",
+        "methodName": "Commercial Bank of Ethiopia (CBE)",
+        "accountHolderName": "Merchant Seller",
+        "accountNumber": "1000123456789",
+        "isActive": true,
+        "createdAt": "2026-09-21T09:27:14.102Z"
+      },
+      "status": "DISPUTED",
+      "expiresAt": "2026-09-21T10:00:17.538Z",
+      "createdAt": "2026-09-21T09:45:17.538Z",
+      "updatedAt": "2026-09-21T09:46:03.046Z",
+      "buyerPaidAt": "2026-09-21T09:45:31.745Z",
+      "disputeId": "DSP-1789983963046-1771"
+    },
+    {
+      "id": "HBP-957108",
+      "adId": "AD-1789982834102",
+      "buyerId": "TEST-BUYER-1789982834102",
+      "buyerName": "Derartu Tulu (Buyer)",
+      "buyerEmail": "buyer_1789982834102@test.com",
+      "sellerId": "1000000001",
+      "sellerName": "Verified Merchant",
+      "sellerEmail": "merchant@habeshap2p.com",
+      "tradeAmountUsdt": "5.0000",
+      "priceEtb": "145.0000",
+      "totalEtb": "725.00",
+      "sellerFeeUsdt": "0.0600",
+      "buyerFeeUsdt": "0.0600",
+      "lockedSellerUsdt": "5.0600",
+      "buyerReceivesUsdt": "5.0000",
+      "selectedPaymentMethod": {
+        "id": "PMT-1789982834102",
+        "userId": "1000000001",
+        "paymentMethodId": "PM-CBE",
+        "methodName": "Commercial Bank of Ethiopia (CBE)",
+        "accountHolderName": "Merchant Partner",
+        "accountNumber": "1000123456789",
+        "isActive": true,
+        "createdAt": "2026-09-21T09:27:14.102Z"
+      },
+      "status": "ADMIN_RESOLVED",
+      "expiresAt": "2026-09-21T09:42:14.106Z",
+      "createdAt": "2026-09-21T09:27:14.106Z",
+      "updatedAt": "2026-09-21T09:27:14.108Z",
+      "buyerPaidAt": "2026-09-21T09:27:14.106Z",
+      "disputeId": "DSP-1789982834107-9305",
+      "releasedAt": "2026-09-21T09:27:14.108Z"
+    },
+    {
+      "id": "HBP-302698",
+      "adId": "AD-1789982834102",
+      "buyerId": "TEST-BUYER-1789982834102",
+      "buyerName": "Derartu Tulu (Buyer)",
+      "buyerEmail": "buyer_1789982834102@test.com",
+      "sellerId": "1000000001",
+      "sellerName": "Verified Merchant",
+      "sellerEmail": "merchant@habeshap2p.com",
+      "tradeAmountUsdt": "5.0000",
+      "priceEtb": "145.0000",
+      "totalEtb": "725.00",
+      "sellerFeeUsdt": "0.0600",
+      "buyerFeeUsdt": "0.0600",
+      "lockedSellerUsdt": "5.0600",
+      "buyerReceivesUsdt": "5.0000",
+      "selectedPaymentMethod": {
+        "id": "PMT-1789982834102",
+        "userId": "1000000001",
+        "paymentMethodId": "PM-CBE",
+        "methodName": "Commercial Bank of Ethiopia (CBE)",
+        "accountHolderName": "Merchant Partner",
+        "accountNumber": "1000123456789",
+        "isActive": true,
+        "createdAt": "2026-09-21T09:27:14.102Z"
+      },
+      "status": "COMPLETED",
+      "expiresAt": "2026-09-21T09:42:14.103Z",
+      "createdAt": "2026-09-21T09:27:14.103Z",
+      "updatedAt": "2026-09-21T09:27:14.105Z",
+      "buyerPaidAt": "2026-09-21T09:27:14.105Z",
+      "releasedAt": "2026-09-21T09:27:14.105Z",
+      "releaseTxSignature": "REL-1789982834105-HBP-302698-70196"
+    }
+  ],
+  "tradeEvents": [
+    {
+      "id": "EVT-1789982834103",
+      "tradeId": "HBP-302698",
+      "eventType": "TRADE_CREATED",
+      "triggeredBy": "Derartu Tulu (Buyer)",
+      "message": "Trade created. 5.0600 USDT locked in escrow. Buyer must pay 725.00 ETB.",
+      "createdAt": "2026-09-21T09:27:14.103Z"
+    },
+    {
+      "id": "EVT-1789982834105",
+      "tradeId": "HBP-302698",
+      "eventType": "BUYER_MARKED_PAID",
+      "triggeredBy": "Derartu Tulu (Buyer)",
+      "message": "Buyer marked payment as completed. Awaiting seller account confirmation.",
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "EVT-1789982834105",
+      "tradeId": "HBP-302698",
+      "eventType": "SELLER_RELEASED",
+      "triggeredBy": "Verified Merchant",
+      "message": "Seller confirmed payment receipt and released 5.0000 USDT to buyer. Trade completed.",
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "EVT-1789982834106",
+      "tradeId": "HBP-957108",
+      "eventType": "TRADE_CREATED",
+      "triggeredBy": "Derartu Tulu (Buyer)",
+      "message": "Trade created. 5.0600 USDT locked in escrow. Buyer must pay 725.00 ETB.",
+      "createdAt": "2026-09-21T09:27:14.106Z"
+    },
+    {
+      "id": "EVT-1789982834106",
+      "tradeId": "HBP-957108",
+      "eventType": "BUYER_MARKED_PAID",
+      "triggeredBy": "Derartu Tulu (Buyer)",
+      "message": "Buyer marked payment as completed. Awaiting seller account confirmation.",
+      "createdAt": "2026-09-21T09:27:14.106Z"
+    },
+    {
+      "id": "EVT-1789982834107",
+      "tradeId": "HBP-957108",
+      "eventType": "DISPUTE_OPENED",
+      "triggeredBy": "Derartu Tulu (Buyer)",
+      "message": "Dispute opened (Seller not releasing): Paid via CBE screenshot attached. Admin review requested.",
+      "createdAt": "2026-09-21T09:27:14.107Z"
+    },
+    {
+      "id": "EVT-1789982834108",
+      "tradeId": "HBP-957108",
+      "eventType": "ADMIN_RESOLVED",
+      "triggeredBy": "Habesha P2P Super Admin",
+      "message": "Admin resolved dispute in favor of BUYER. Notes: Payment receipt verified by admin",
+      "createdAt": "2026-09-21T09:27:14.108Z"
+    },
+    {
+      "id": "EVT-1789983917538",
+      "tradeId": "HBP-420880",
+      "eventType": "TRADE_CREATED",
+      "triggeredBy": "esube",
+      "message": "Trade created. 5.0600 USDT locked in escrow. Buyer must pay 725.00 ETB.",
+      "createdAt": "2026-09-21T09:45:17.538Z"
+    },
+    {
+      "id": "EVT-1789983931745",
+      "tradeId": "HBP-420880",
+      "eventType": "BUYER_MARKED_PAID",
+      "triggeredBy": "esube",
+      "message": "Buyer marked payment as completed. Awaiting seller account confirmation.",
+      "createdAt": "2026-09-21T09:45:31.745Z"
+    },
+    {
+      "id": "EVT-1789983963046",
+      "tradeId": "HBP-420880",
+      "eventType": "DISPUTE_OPENED",
+      "triggeredBy": "esube",
+      "message": "Dispute opened (Payment made but seller not releasing): 2345678uiokjvcxzzxfghnj, ertyuikmnbvc. Admin review requested.",
+      "createdAt": "2026-09-21T09:46:03.046Z"
+    }
+  ],
+  "disputes": [
+    {
+      "id": "DSP-1789983963046-1771",
+      "tradeId": "HBP-420880",
+      "openedByUserId": "USR-1789983884199-550",
+      "openedByName": "esube",
+      "reason": "Payment made but seller not releasing",
+      "explanation": "2345678uiokjvcxzzxfghnj, ertyuikmnbvc",
+      "evidenceUrls": [
+        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&auto=format&fit=crop&q=60"
+      ],
+      "status": "OPEN",
+      "createdAt": "2026-09-21T09:46:03.046Z"
+    },
+    {
+      "id": "DSP-1789982834107-9305",
+      "tradeId": "HBP-957108",
+      "openedByUserId": "TEST-BUYER-1789982834102",
+      "openedByName": "Derartu Tulu (Buyer)",
+      "reason": "Seller not releasing",
+      "explanation": "Paid via CBE screenshot attached",
+      "evidenceUrls": [],
+      "status": "RESOLVED_BUYER",
+      "createdAt": "2026-09-21T09:27:14.107Z",
+      "resolutionNotes": "Payment receipt verified by admin",
+      "resolvedBy": "admin@habeshap2p.com",
+      "resolvedAt": "2026-09-21T09:27:14.108Z"
+    }
+  ],
+  "adminActions": [
+    {
+      "id": "AUDIT-1789982834108-2091",
+      "adminId": "USR-ADMIN-001",
+      "adminEmail": "admin@habeshap2p.com",
+      "action": "RESOLVE_DISPUTE_BUYER",
+      "targetType": "DISPUTE",
+      "targetId": "DSP-1789982834107-9305",
+      "amount": "5.0000",
+      "previousState": "DISPUTED",
+      "newState": "ADMIN_RESOLVED",
+      "reason": "Payment receipt verified by admin",
+      "createdAt": "2026-09-21T09:27:14.108Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOTIF-1789983963046-854",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "Dispute Opened for Trade",
+      "message": "A dispute has been opened for Trade HBP-420880. Platform administrators have been notified to review evidence.",
+      "type": "DISPUTE",
+      "referenceId": "HBP-420880",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:46:03.046Z"
+    },
+    {
+      "id": "NOTIF-1789983931745-493",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "Buyer Marked Payment Completed",
+      "message": "BUYER HAS MARKED THE PAYMENT AS COMPLETED (725.00 ETB). PLEASE CHECK YOUR PAYMENT ACCOUNT BEFORE RELEASING THE USDT.",
+      "type": "TRADE",
+      "referenceId": "HBP-420880",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:45:31.745Z"
+    },
+    {
+      "id": "NOTIF-1789983917538-491",
+      "userId": "USR-1789983884199-550",
+      "title": "Trade Created",
+      "message": "You opened trade HBP-420880. Please transfer 725.00 ETB to seller's Commercial Bank of Ethiopia (CBE) account within 15 minutes.",
+      "type": "TRADE",
+      "referenceId": "HBP-420880",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:45:17.538Z"
+    },
+    {
+      "id": "NOTIF-1789983917538-515",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "New Trade Created",
+      "message": "Buyer esube opened trade HBP-420880 for 5.0000 USDT (725.00 ETB). 5.0600 USDT locked.",
+      "type": "TRADE",
+      "referenceId": "HBP-420880",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:45:17.538Z"
+    },
+    {
+      "id": "NOTIF-1789982834108-42",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "Dispute Resolved (BUYER)",
+      "message": "Administrator has resolved Trade HBP-957108 dispute in favor of BUYER. Notes: Payment receipt verified by admin",
+      "type": "DISPUTE",
+      "referenceId": "HBP-957108",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.108Z"
+    },
+    {
+      "id": "NOTIF-1789982834108-189",
+      "userId": "TEST-BUYER-1789982834102",
+      "title": "Dispute Resolved (BUYER)",
+      "message": "Administrator has resolved Trade HBP-957108 dispute in favor of BUYER. Notes: Payment receipt verified by admin",
+      "type": "DISPUTE",
+      "referenceId": "HBP-957108",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.108Z"
+    },
+    {
+      "id": "NOTIF-1789982834107-544",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "Dispute Opened for Trade",
+      "message": "A dispute has been opened for Trade HBP-957108. Platform administrators have been notified to review evidence.",
+      "type": "DISPUTE",
+      "referenceId": "HBP-957108",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.107Z"
+    },
+    {
+      "id": "NOTIF-1789982834106-431",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "Buyer Marked Payment Completed",
+      "message": "BUYER HAS MARKED THE PAYMENT AS COMPLETED (725.00 ETB). PLEASE CHECK YOUR PAYMENT ACCOUNT BEFORE RELEASING THE USDT.",
+      "type": "TRADE",
+      "referenceId": "HBP-957108",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.106Z"
+    },
+    {
+      "id": "NOTIF-1789982834106-237",
+      "userId": "TEST-BUYER-1789982834102",
+      "title": "Trade Created",
+      "message": "You opened trade HBP-957108. Please transfer 725.00 ETB to seller's Commercial Bank of Ethiopia (CBE) account within 15 minutes.",
+      "type": "TRADE",
+      "referenceId": "HBP-957108",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.106Z"
+    },
+    {
+      "id": "NOTIF-1789982834106-989",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "New Trade Created",
+      "message": "Buyer Derartu Tulu (Buyer) opened trade HBP-957108 for 5.0000 USDT (725.00 ETB). 5.0600 USDT locked.",
+      "type": "TRADE",
+      "referenceId": "HBP-957108",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.106Z"
+    },
+    {
+      "id": "NOTIF-1789982834105-11",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "Trade Completed",
+      "message": "Trade HBP-302698 completed successfully. 5.0600 USDT settled from escrow.",
+      "type": "TRADE",
+      "referenceId": "HBP-302698",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "NOTIF-1789982834105-258",
+      "userId": "TEST-BUYER-1789982834102",
+      "title": "Trade Completed! USDT Received",
+      "message": "Trade HBP-302698 has been completed! 5.0000 USDT is now in your available wallet.",
+      "type": "TRADE",
+      "referenceId": "HBP-302698",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "NOTIF-1789982834105-937",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "Buyer Marked Payment Completed",
+      "message": "BUYER HAS MARKED THE PAYMENT AS COMPLETED (725.00 ETB). PLEASE CHECK YOUR PAYMENT ACCOUNT BEFORE RELEASING THE USDT.",
+      "type": "TRADE",
+      "referenceId": "HBP-302698",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.105Z"
+    },
+    {
+      "id": "NOTIF-1789982834104-932",
+      "userId": "TEST-BUYER-1789982834102",
+      "title": "Trade Created",
+      "message": "You opened trade HBP-302698. Please transfer 725.00 ETB to seller's Commercial Bank of Ethiopia (CBE) account within 15 minutes.",
+      "type": "TRADE",
+      "referenceId": "HBP-302698",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.104Z"
+    },
+    {
+      "id": "NOTIF-1789982834104-5",
+      "userId": "TEST-SELLER-1789982834101",
+      "title": "New Trade Created",
+      "message": "Buyer Derartu Tulu (Buyer) opened trade HBP-302698 for 5.0000 USDT (725.00 ETB). 5.0600 USDT locked.",
+      "type": "TRADE",
+      "referenceId": "HBP-302698",
+      "isRead": false,
+      "createdAt": "2026-09-21T09:27:14.104Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ANN-001",
+      "title": "Welcome to Habesha P2P / እንኳን ወደ ሀበሻ ፒቱፒ በደህና መጡ",
+      "message": "Secure Ethiopian USDT P2P Trading Platform with locked-balance escrow, zero risk of double release, and dedicated 24/7 Ethiopian support.",
+      "language": "all",
+      "audience": "all",
+      "isActive": true,
+      "createdAt": "2026-09-21T09:27:14.100Z"
+    }
+  ],
+  "supportCases": [],
+  "settings": {
+    "sellerFeeUsdt": "0.0600",
+    "buyerFeeUsdt": "0.0600",
+    "maintenanceMode": false,
+    "supportBotUsername": "@habeshap2pbbot",
+    "buyerPaymentWindowMinutes": 15,
+    "sellerReleaseWindowMinutes": 15,
+    "minTradeUsdt": "5.0000",
+    "maxTradeUsdt": "10000.0000",
+    "allowNewRegistrations": true
+  }
+}

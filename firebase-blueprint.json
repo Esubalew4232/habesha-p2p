@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "entities": {
+    "users": {
+      "fields": {
+        "id": { "type": "string", "description": "10-12 digit clean numeric user ID" },
+        "email": { "type": "string" },
+        "fullName": { "type": "string" },
+        "role": { "type": "string" },
+        "isSuspended": { "type": "boolean" },
+        "tradingRestricted": { "type": "boolean" },
+        "withdrawalRestricted": { "type": "boolean" },
+        "avatarUrl": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "email", "fullName", "role"]
+    },
+    "wallets": {
+      "fields": {
+        "userId": { "type": "string" },
+        "availableBalance": { "type": "string" },
+        "lockedBalance": { "type": "string" },
+        "totalBalance": { "type": "string" },
+        "currency": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "availableBalance", "lockedBalance", "totalBalance"]
+    },
+    "advertisements": {
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "sellerName": { "type": "string" },
+        "type": { "type": "string" },
+        "amountAvailable": { "type": "string" },
+        "priceEtb": { "type": "string" },
+        "minOrderEtb": { "type": "string" },
+        "maxOrderEtb": { "type": "string" },
+        "paymentMethods": { "type": "array" },
+        "isActive": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "sellerName", "type", "amountAvailable", "priceEtb"]
+    },
+    "trades": {
+      "fields": {
+        "id": { "type": "string" },
+        "adId": { "type": "string" },
+        "buyerId": { "type": "string" },
+        "buyerName": { "type": "string" },
+        "sellerId": { "type": "string" },
+        "sellerName": { "type": "string" },
+        "tradeAmountUsdt": { "type": "string" },
+        "priceEtb": { "type": "string" },
+        "totalEtb": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "buyerId", "sellerId", "tradeAmountUsdt", "status"]
+    }
+  }
+}
